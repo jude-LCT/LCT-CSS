@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final Website HTML and CSS</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Fonts Links For Icon -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="logo" href="#">
+        <p>Opulence Rides</p><img src="./image/Luxury Taxi Transport Services Logo.svg" alt="coding kid photo">
+      </a>
+      <ul class="menu-links">
+        <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Testimonials</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+      <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-section">
+      <div class="content">
+        <h2>Experience Eleg<span>ance</span> on the Move</h2>
+        <p>
+          At <em>Opulence Rides </em> , we redefine luxury in every mile. Our meticulously crafted service ensures
+          unparalleled
+          comfort
+          and sophistication. With a fleet of premium vehicles and a commitment to exceptional standards, we offer more
+          than just
+          a ride—we deliver an exclusive experience. Trust us to elevate your journey with elegance and precision.
+        </p>
+        <div class="btn-circle"><button>Book Now</button></div>
+        <footer>
+          <p>&copy; 2024 JUDE ESTRADA. All rights reserved.</p>
+
+        </footer>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <script>
+    const header = document.querySelector("header");
+    const hamburgerBtn = document.querySelector("#hamburger-btn");
+    const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+    // Toggle mobile menu on hamburger button click
+    hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+    // Close mobile menu on close button click
+    closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+  </script>
+
+
+
+</body>
+
+</html>
